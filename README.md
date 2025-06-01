@@ -11,9 +11,17 @@ The fourth module, **ssl_report.py**, integrates with the public API of Qualys S
 The output is structured in a clean table format, making it easy to interpret important certificate metadata.
 
 
-Clone the Repository
-
+```bash
 git clone https://github.com/chetan-106/SSL-Recognition.git
+
+```bash
+pip install -r requirements.txt
+
+
+```bash
+cd modules
+
+
 
 
 
