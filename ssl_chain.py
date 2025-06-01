@@ -6,17 +6,15 @@ from rich.console import Console
 from rich.table import Table
 from colorama import Fore, init
 
-
 init(autoreset=True)
 console = Console()
-
 def banner():
     console.print(Fore.GREEN + """
     =============================================
-              SSL Inspector - Certificate Analyzer
+        SSL Inspector - Certificate Analyzer
     =============================================
     """)
-
+    
 def get_ssl_certificate(domain):
     """Retrieve the SSL certificate of a given domain."""
     try:
@@ -24,7 +22,7 @@ def get_ssl_certificate(domain):
         with socket.create_connection((domain, 443), timeout=10) as sock:
             with context.wrap_socket(sock, server_hostname=domain) as ssock:
                 cert = ssock.getpeercert()
-                cert_der = ssock.getpeercert(binary_form=True)  # Get binary format for fingerprint
+                cert_der = ssock.getpeercert(binary_form=True)  
                 return cert, cert_der
     except (ssl.SSLError, socket.error, socket.timeout) as e:
         console.print(Fore.RED + f"[!] SSL/Socket error: {e}")
@@ -56,7 +54,6 @@ def analyze_certificate(cert, cert_der):
         "Fingerprint (SHA-256)": get_fingerprint(cert_der),
     }
 
-   
     try:
         analysis["Valid From"] = datetime.strptime(cert["notBefore"], "%b %d %H:%M:%S %Y %Z")
         analysis["Valid Until"] = datetime.strptime(cert["notAfter"], "%b %d %H:%M:%S %Y %Z")
