@@ -27,6 +27,7 @@ pip install -r requirements.txt
 python main.py
 ```
 
+![Screenshot 2025-06-01 185851](https://github.com/user-attachments/assets/74ad171b-90d0-4719-b12a-a4d54c985203)
 
 
 
