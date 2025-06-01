@@ -14,12 +14,13 @@ The output is structured in a clean table format, making it easy to interpret im
 ```bash
 git clone https://github.com/chetan-106/SSL-Recognition.git
 
-```bash
+cd SSL-Recognition
+
 pip install -r requirements.txt
 
+python main.py
 
-```bash
-cd modules
+
 
 
 
