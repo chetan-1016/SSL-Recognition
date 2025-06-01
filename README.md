@@ -10,6 +10,8 @@ The fourth module, **ssl_report.py**, integrates with the public API of Qualys S
 
 The output is structured in a clean table format, making it easy to interpret important certificate metadata.
 
+
+
 ![Screenshot 2025-06-01 185851](https://github.com/user-attachments/assets/4796ea32-1491-4503-91b3-fc562a2d82b9)
 
 
