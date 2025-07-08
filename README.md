@@ -8,6 +8,7 @@ The third module, **ssl_pining.py**, focuses on SSL pinning and transport securi
 
 The fourth module, **ssl_report.py**, integrates with the public API of Qualys SSL Labs, one of the most trusted platforms for SSL configuration testing. This module retrieves detailed reports including the server’s SSL grade, supported protocol versions (e.g., TLS 1.2, TLS 1.3), enabled cipher suites, server signature, and security features like OCSP stapling and HSTS. It also flags critical vulnerabilities such as BEAST, POODLE, Heartbleed, and RC4 usage. 
 
+
 The output is structured in a clean table format, making it easy to interpret important certificate metadata.
 
 
